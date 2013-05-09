@@ -10,7 +10,7 @@ package com.jdsu.simon.mixer.controller;
 public class ALSAMixerController {
 
     static{
-        System.loadLibrary("AmixWrapper");
+        System.loadLibrary("amixwrapper");
     }
     /**
      * 
