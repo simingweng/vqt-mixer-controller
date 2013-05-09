@@ -16,9 +16,8 @@ public class ALSAMixerController {
      * 
      */
     public ALSAMixerController() {
-        // TODO Auto-generated constructor stub
     }
     
-    private native void controllMixer(String mixerName, int value);
+    public native int controllMixer(String mixerName, int value);
 
 }
