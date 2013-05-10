@@ -15,8 +15,13 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := amixexport
+LOCAL_SRC_FILES := libamixexport.so
+include $(PREBUILT_SHARED_LIBRARY)
 
+
+include $(CLEAR_VARS)
 LOCAL_MODULE    := amixwrapper
 LOCAL_SRC_FILES := amixwrapper.c
-
+LOCAL_SHARED_LIBRARIES := amixexport
 include $(BUILD_SHARED_LIBRARY)
