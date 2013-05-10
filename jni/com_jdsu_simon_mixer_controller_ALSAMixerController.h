@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     com_jdsu_simon_mixer_controller_ALSAMixerController
  * Method:    controllMixer
- * Signature: (Ljava/lang/String;I)I
+ * Signature: ([Ljava/lang/String;)I
  */
 JNIEXPORT jint JNICALL Java_com_jdsu_simon_mixer_controller_ALSAMixerController_controllMixer
-  (JNIEnv *, jobject, jstring, jint);
+  (JNIEnv *, jobject, jobjectArray);
 
 #ifdef __cplusplus
 }

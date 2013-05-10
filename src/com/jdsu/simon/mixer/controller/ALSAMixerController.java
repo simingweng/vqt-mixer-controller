@@ -19,9 +19,10 @@ public class ALSAMixerController {
     }
     
     public void setInCallMusicDelivery(boolean on){
-        controllMixer("", on ? 1 : 0);
+        String[] arguments = {"mixer_name", on ? "1" : "0"};
+        controllMixer(arguments);
     }
     
-    public native int controllMixer(String mixerName, int value);
+    public native int controllMixer(String[] args);
 
 }
